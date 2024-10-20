@@ -1,11 +1,10 @@
-// components/Navbar.jsx
 'use client'; // This directive ensures the component is rendered on the client side
 
 import { useState } from 'react';
 import Link from 'next/link';
 import { MenuIcon } from '@heroicons/react/outline';
 import {  XIcon } from '@heroicons/react/outline';
-import Image from 'next/image';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
