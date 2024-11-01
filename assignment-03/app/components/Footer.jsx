@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8 mt-16">
@@ -15,16 +17,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-2">Quick Links</h3>
             <ul className="text-gray-400">
-              <li><a href="/" className="hover:text-white">Home</a></li>
-              <li><a href="/about" className="hover:text-white">About</a></li>
-              <li><a href="/contact" className="hover:text-white">Contact</a></li>
-              <li><a href="/services" className="hover:text-white">Services</a></li>
+              <li><Link href="/" className="hover:text-white">Home</Link></li>
+              <li><Link href="/about" className="hover:text-white">About</Link></li>
+              <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+              <li><Link href="/services" className="hover:text-white">Services</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-2">Contact Us</h3>
             <p className="text-gray-400">Created by Hammad</p>
-            <p className="text-gray-400">Email: <a href="mailto:mhammadkhan740@gmail.com" className="hover:text-white">click me to email</a></p>
+            <p className="text-gray-400">Email: <Link href="mailto:mhammadkhan740@gmail.com" className="hover:text-white">click me to email</Link></p>
             <p className="text-gray-400">Phone: (123) 456-7890</p>
           </div>
         </div>

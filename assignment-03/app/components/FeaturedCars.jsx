@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Custom Next Arrow Component
 function NextArrow(props) {
@@ -37,10 +38,10 @@ export default function FeaturedNewCars() {
 
   const cars = {
     Popular: [
-      { name: 'Toyota Corolla', price: 'PKR 59.7 - 75.5 lacs', reviews: 622, rating: 3.5, image: 'https://cache1.pakwheels.com/system/car_generation_pictures/5361/medium/Corolla-X-Cars-Cropped-Pictures-for-Website.jpg?1606903674', link: '/details/toyota-corolla' },
-      { name: 'Suzuki Alto', price: 'PKR 23.3 - 30.5 lacs', reviews: 199, rating: 3, image: 'https://cache4.pakwheels.com/system/car_generation_pictures/6013/medium/Suzuki_Alto_-_PNG.png?1635945100', link: '/details/suzuki-alto' },
-      { name: 'Honda City', price: 'PKR 46.5 - 58.5 lacs', reviews: 456, rating: 3.5, image: 'https://cache1.pakwheels.com/system/car_generation_pictures/6425/medium/Honda_City_Front.jpg?1651424945', link: '/details/honda-city' },
-      { name: 'Honda Civic', price: 'PKR 86.6 - 99.0 lacs', reviews: 359, rating: 3.5, image: 'https://cache4.pakwheels.com/system/car_generation_pictures/7370/medium/Cover.jpg?1677570254', link: '/details/honda-civic' },
+      { name: 'Toyota Corolla', price: 'PKR 59.7 - 75.5 lacs', reviews: 622, rating: 3.5, image: '/Corolla.png', link: '/details/toyota-corolla' },
+      { name: 'Suzuki Alto', price: 'PKR 23.3 - 30.5 lacs', reviews: 199, rating: 3, image: '/Suzuki_Alto.png', link: '/details/suzuki-alto' },
+      { name: 'Honda City', price: 'PKR 46.5 - 58.5 lacs', reviews: 456, rating: 3.5, image: '/Honda_City.png', link: '/details/honda-city' },
+      { name: 'Honda Civic', price: 'PKR 86.6 - 99.0 lacs', reviews: 359, rating: 3.5, image: '/Honda_Civic.png', link: '/details/honda-civic' },
     ],
     Upcoming: [
       { name: 'Upcoming Car 1', price: 'PKR XX.X - XX.X lacs', reviews: 0, rating: 0, image: 'https://cdn.pixabay.com/photo/2020/08/14/14/56/electric-car-5489966_960_720.png', link: '/details/upcoming-car1' },
@@ -103,7 +104,7 @@ export default function FeaturedNewCars() {
             <div key={index} className="p-4">
               <Link href={car.link}>
                 <div className="flex flex-col items-center bg-white p-4 shadow rounded cursor-pointer">
-                  <img src={car.image} alt={`${car.name} image`} className="h-40 w-full object-cover mb-4" />
+                  <Image src={car.image} alt={`${car.name} image`} width={'1000'} height={'1000'} className="h-40 w-96 object-contain mb-4" />
                   <div>
                     <h3 className="text-lg font-bold">{car.name}</h3>
                     <p className="text-gray-500">{car.price}</p>

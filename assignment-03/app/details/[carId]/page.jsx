@@ -69,7 +69,7 @@ const CarDetails = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold text-center">{car.name}</h1>
-      <img src={car.image} alt={`${car.name} image`} className="h-96 max-w-screen-sm mx-auto my-4" />
+      <img src={car.image} alt={`${car.name} image`} className="h-auto max-w-screen-sm mx-auto my-4" />
       <p className="text-lg text-center">{car.price}</p>
       <div className="flex justify-center my-4 space-x-4">
         <button className="bg-white text-blue-500 py-2 px-4 rounded border border-blue-500 hover:bg-blue-500 hover:text-white transition">Contact Seller</button>
