@@ -1,4 +1,4 @@
-const ChildComponent = (props: any) => {
+const ChildComponent = (props) => {
     return (
         <div className="border rounded-3xl text-center p-5 m-5 w-3/12 bg-slate-400">
             <h3 className="text-5xl py-1">

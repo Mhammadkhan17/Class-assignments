@@ -1,4 +1,3 @@
-// components/card.js
 import Image from 'next/image';
 
 const Card = ({ title, price, imageUrl }) => {
