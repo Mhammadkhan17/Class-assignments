@@ -22,7 +22,7 @@ const ArrayMap = () => {
         {
             cars.map((vehicle)=>{
                 return(
-                    <div key={vehicle.id} className="flex justify-between m-8">
+                    <div key={vehicle.id} className="flex justify-around w-svh">
                         {vehicle.carOne}
                         {vehicle.carTwo}
                         {vehicle.carThree}

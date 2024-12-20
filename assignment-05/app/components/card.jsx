@@ -9,7 +9,7 @@ const Card = ({ title, price, imageUrl }) => {
           alt={title}
           width={500} 
           height={300}
-        />
+        />  
       )}
       <div className='bg-gray-200 p-5 rounded-lg'>
         <h2 className="text-xl font-bold text-center text-blue-950">{title}</h2>
