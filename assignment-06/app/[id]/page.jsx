@@ -1,4 +1,4 @@
-const JsonTodos = async ({ params }: { params: { id: string } }) => {
+const JsonTodos = async ({ params }) => {
 
     const url = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
     const response = await url.json();
